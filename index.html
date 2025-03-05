@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+  </head>
+
+  <body class=" font-miFuente h-full bg-gray-50 flex justify-center items-center p-4">
+    <header class="bg-[#F7F0E9] fixed top-0 left-0 right-0 z-10 shadow-lg mb-12">
+      <nav
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl text-[#BA9F77]">Investment streams</a>
+        <div class="space-x-6">
+          <a
+            href="#section1"
+            class="text-black"
+            onclick="scrollToSection('section1')"
+            >Home</a
+          >
+          <a
+            href="#section2"
+            class="text-black"
+            onclick="scrollToSection('section2')"
+            >Services</a
+          >
+          <a
+            href="#section3"
+            class="text-black"
+            onclick="scrollToSection('section3')"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <div class="flex flex-col gap-8 w-full mt-12 h-full">
+
+
+
+      <!-- Sección 1 -->
+      <section
+        id="section1"
+        class="w-full h-full bg-white flex flex-col md:flex-row justify-center items-center pt-16 py-8 px-8"
+      >
+        <!-- Sidebar -->
+        <div class="w-full md:w-1/3 bg-white p-6 flex flex-col gap-4">
+          <button
+            class="btn-active py-6 px-4 w-full text-lg rounded-none focus:outline-none hover:border-2 hover:border-[#BA9F77]"
+            onclick="changeContent('benefits')"
+          >
+            BENEFITS OF INVESTING IN AUSTRALIAN PROPERTY
+          </button>
+          <!-- bg-[#BA9F77]  bg-[#E5D4C0]  -->
+          <button
+            class="btn-active py-6 px-4 w-full text-lg rounded-none focus:outline-none hover:border-2 hover:border-[#BA9F77]"
+            onclick="changeContent('streams')"
+          >
+            INVESTMENT STREAMS FOR AUSTRALIAN CITIZENSHIP
+          </button>
+          <button
+            class="btn-active py-6 px-4 w-full text-lg  rounded-none focus:outline-none hover:border-2 hover:border-[#BA9F77]"
+            onclick="changeContent('why')"
+          >
+            WHY INVEST IN PORT DOUGLAS
+          </button>
+          <button
+            class="btn-active py-6 px-4 w-full text-lg  rounded-none focus:outline-none hover:border-2 hover:border-[#BA9F77]"
+            onclick="changeContent('citizenship')"
+          >
+            AUSTRALIAN CITIZENSHIP BENEFITS BY INVESTMENT
+          </button>
+        </div>
+
+        <!-- Content -->
+        <div id="content" class="w-full md:w-2/3 p-8 border border-[#C2A278] text-justify">
+          <!-- INNERHTML Va meter contenido aqui -->
+        </div>
+      </section>
+
+      
+
+      <!-- Sección 2 -->
+      <section id="section2" class="w-full py-16 px-8 pt-24 lg:px-16 bg-[#F2EDEA]">
+        <!-- Título -->
+        <h2
+          class="text-3xl font-semibold text-[#BA9F77] mb-4 text-center md:text-left"
+        >
+          Why Invest In Australia
+        </h2>
+
+        <!-- Descripción -->
+        <p class="font-miFuente text-lg text-black mb-8 text-center md:text-left">
+          International buyers are buying property in Australia to capitalize on
+          the country’s strong rental yields, diverse investment options and
+          stable home prices. Australia’s property market has shown remarkable
+          resilience, even during the global pandemic. Here are key reasons why
+          foreign investors, especially Americans, are drawn to Australian real
+          estate:
+        </p>
+
+        <!-- Carrusel -->
+        <div class="relative w-full overflow-hidden">
+          <!-- Contenedor de cards -->
+          <div
+            id="carousel"
+            class="flex space-x-4 overflow-x-scroll scroll-smooth scrollbar-hide p-4"  style="scrollbar-width: none; -ms-overflow-style: none;"
+          >
+            <!-- Card 1 -->
+            <div
+              class="min-w-full md:min-w-[33%] bg-[#BA9F77] p-6 text-white flex flex-col snap-start"
+            >
+            <i class="fa-solid fa-chart-simple text-white text-md mb-6"></i>
+              <h3 class="font-bold uppercase mb-2">Strong Rental Market</h3>
+              <p class="text-lg">
+                Australia’s residential property value has soared to an all-time high of $9.25 trillion, with significant growth in the past six months.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="min-w-full md:min-w-[33%] bg-[#BA9F77] p-6 text-white flex flex-col snap-start"
+            >
+              <i class="fa-solid fa-house text-white text-md mb-6"></i>
+              <h3 class="font-bold uppercase mb-2">Strong Rental Market</h3>
+              <p class="text-lg">
+                Many areas in Australia have a strong rental market, providing
+                opportunities for rental income for investors and Port Douglas
+                is no exception with rental rates up 8% for houses and a massive
+                14.6% in units and apartments over the past 12 months.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="min-w-full md:min-w-[33%] bg-[#BA9F77] p-6 text-white flex flex-col snap-start"
+            >
+              <i class="fa-solid fa-sack-dollar text-white text-md mb-6"></i>
+              <h3 class="font-bold uppercase mb-2">Stable Economy</h3>
+              <p class="text-lg">
+                Australia has a strong and stable economy, which is attractive
+                to investors seeking a secure investment environment.
+              </p>
+            </div>
+
+             <!-- Card 4 -->
+             <div
+             class="min-w-full md:min-w-[33%] bg-[#BA9F77] p-6 text-white flex flex-col snap-start"
+           >
+             <i class="fa-solid fa-sack-dollar text-white text-md mb-6"></i>
+             <h3 class="font-bold uppercase mb-2">Stable Economy</h3>
+             <p class="text-lg">
+               Australia has a strong and stable economy, which is attractive
+               to investors seeking a secure investment environment.
+             </p>
+           </div>
+
+            <div
+              class="min-w-full md:min-w-[33%] bg-[#BA9F77] p-6 text-white flex flex-col snap-start"
+            >
+              <i class="fa-solid fa-briefcase text-white text-md mb-6"></i> 
+              <h3 class="font-bold uppercase mb-2">Stable Economy</h3>
+              <p class="text-lg">
+                Australia has a strong and stable economy, which is attractive
+                to investors seeking a secure investment environment.
+              </p>
+            </div>
+
+            <!-- Botón Izquierdo -->
+            <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#F2EDEA] text-white p-3 rounded-full opacity-75 hover:opacity-100 transition hidden">
+              <i class="text-[#BA9F77] fa-solid fa-caret-left"></i>
+            </button>
+
+            <!-- Botón Derecho -->
+            <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#F2EDEA] text-white p-3 rounded-full opacity-75 hover:opacity-100 transition hidden">
+              <i class="text-[#BA9F77] fa-solid fa-caret-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Section 3 -->
+      <section
+        id="section3"
+        class="mx-auto bg-white flex flex-col md:flex-row items-center pt-20 px-6 pb-64 md:px-16"
+      >
+        <div class="md:w-1/2 text-center md:text-left p-4">
+          <h2 class="text-3xl text-[#BA9F77] font-bold text-gray-700">
+            Secure Your Spot For The Next Phase
+          </h2>
+          <p class="text-gray-600 mt-2">
+            Secure your investment today and be part of an extraordinary legacy
+            of sustainable luxury in Port Douglas. For more information and to
+            schedule a site visit, please contact
+            <a href="mailto:cairns@gallarohomes.com.au" class="text-blue-500"
+              >cairns@gallarohomes.com.au</a
+            >
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-gray-50 px-6 rounded-lg shadow-md">
+          <h3 class="text-lg mt-8 font-semibold text-gray-600 text-center">
+            JOIN THE PRIORITY LIST TODAY
+          </h3>
+          <form class="mt-8 mx-8 mb-12" id="form">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-black">
+              <input
+                type="text"
+                placeholder="First Name"
+                name="first_name"
+                class="p-2 border-b-2 border-gray-400 focus:outline-none"
+              />
+              <input
+                type="text"
+                name="last_name"
+                placeholder="Last Name"
+                class="p-2 border-b-2 border-gray-400 focus:outline-none"
+              />
+              <input
+                type="tel"
+                placeholder="Mobile Number"
+                name="mobile_number"
+                class="p-2 border-b-2 border-gray-400 focus:outline-none"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="p-2 border-b-2 border-gray-400 focus:outline-none"
+              />
+            </div>
+            <div class="flex justify-center mt-4">
+              <button type="submit" id="button" class="bg-[#BA9F77] text-[#F2EDEA] m-4 p-4 rounded-full"  value="Send Email" >SECURE MY SPACE</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      emailjs.init('ktcWSH8d_DB4STSS9')
+    </script>
+</html>
+
+<script>
+
+  // Logica de seccion 1
+  const contentData = {
+    benefits: `
+      <h2 class="text-[#BA9F77] font-semibold uppercase mb-2 text-sm">BENEFITS OF INVESTING IN AUSTRALIAN PROPERTY</h2>
+      <p class="text-sm mt-4 text-black">Discover how investing in Australian property can provide a stable and profitable addition to your portfolio.</p>
+    `,
+
+    streams: `
+      <h2 class="text-[#BA9F77] font-semibold uppercase mb-2 text-sm">INVESTMENT STREAMS FOR AUSTRALIAN CITIZENSHIP</h2>
+      <p class="text-xs italic mb-4">*Information correct as of December 2024</p>
+      <ul class="space-y-2 text-sm">
+        <li class="text-black"><span class="font-bold text-[#baa074]">Diversification:</span> Investing in Australian property can diversify your portfolio and reduce risk.</li>
+        <li class="text-black"><span class="font-bold text-[#baa074]">Capital Growth:</span> Unlike the American market, which may not offer easy capital growth, Australian real estate provides ample opportunities for value appreciation.</li>
+        <li class="text-black"><span class="font-bold text-[#baa074]">Ease of Management:</span> Australia has the infrastructure to manage properties remotely, making it stress-free for overseas investors.</li>
+      </ul>
+      <p class="text-sm mt-4 text-black">Australia is a top destination for international investors, known for its robust real estate market and exceptional quality of life. If you’re considering investing, you are responsible for seeking professional legal advice to understand the specific requirements and how they apply to your personal circumstances. 
+      Please note that purchasing property in Australia does not guarantee immigration eligibility. As these requirements frequently change, staying up to date is essential. For more information and updates, visit <a class="font-bold text-[#baa074]" href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/investor-891">https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/investor-891
+      </a></p>
+    `,
+
+    why: `
+      <h2 class="text-[#BA9F77] font-semibold uppercase mb-2 text-sm">WHY INVEST IN PORT DOUGLAS</h2>
+      <p class="text-sm mt-4 text-black">Port Douglas is known for its stunning landscapes and growing tourism industry, making it an excellent spot for property investment.</p>
+    `,
+    
+    citizenship: `
+      <h2 class="text-[#BA9F77] font-semibold uppercase mb-2 text-sm">AUSTRALIAN CITIZENSHIP BENEFITS BY INVESTMENT</h2>
+      <p class="text-sm mt-4 text-black">Learn how strategic investments can fast-track your eligibility for Australian citizenship and the advantages it brings.</p>
+    `,
+  };
+
+  function changeContent(key) {
+    const contentDiv = document.getElementById("content");
+    contentDiv.innerHTML = contentData[key];
+  }
+
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    window.scrollTo({
+      top: section.offsetTop - 60, 
+      behavior: "smooth",
+    });
+  }
+
+  // Mostrar contenido inicial
+  changeContent("streams");
+
+  function initButtonsSeccionOne() {
+    // Selecciona todos los botones
+    const buttons = document.querySelectorAll(".btn-active");
+
+    // Función para aplicar el estilo de selección
+    function setSelectedButton(button) {
+        buttons.forEach(btn => {
+            // Remueve la clase activa de todos los botones
+            btn.classList.remove("bg-[#BA9F77]", "text-white");
+            btn.classList.add("bg-[#F2EDEA]", "text-[#BA9F77]"); // Color cuando no está seleccionado
+        });
+
+        // Agrega la clase activa al botón seleccionado
+        button.classList.add("bg-[#BA9F77]", "text-white"); // Color cuando está seleccionado
+        button.classList.remove("bg-[#F2EDEA]", "text-[#BA9F77]"); // Remueve el color no seleccionado
+    }
+
+    // Añadir evento de clic a cada botón
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            setSelectedButton(button); // Selecciona el botón clickeado
+        });
+    });
+
+    // Preseleccionar el primer botón al cargar la página
+    if (buttons.length > 0) {
+        setSelectedButton(buttons[1]); // El primer botón se preselecciona
+    }
+}
+
+// Llamar a la función cuando se carga la página
+    initButtonsSeccionOne();
+
+
+
+
+  // Logica de seccion 2
+    const carousel = document.getElementById("carousel");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+
+    // Función para actualizar la visibilidad de los botones
+    function updateButtons() {
+        prevButton.classList.toggle("hidden", carousel.scrollLeft <= 0);
+        nextButton.classList.toggle("hidden", carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth);
+    }
+
+    // Mover el carrusel con los botones
+    nextButton.addEventListener("click", () => {
+        carousel.scrollBy({ left: 300, behavior: "smooth" });
+    });
+
+    prevButton.addEventListener("click", () => {
+        carousel.scrollBy({ left: -300, behavior: "smooth" });
+    });
+
+    // Detectar cambios en el scroll para mostrar u ocultar botones
+    carousel.addEventListener("scroll", updateButtons);
+
+    // Inicializar el estado de los botones
+    updateButtons();
+
+
+  // Logica de seccion 3
+  
+  const btn = document.getElementById('button');
+
+  document.getElementById('form')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = 'Sending...';
+
+    const serviceID = 'service_v9lm774';
+    const templateID = 'template_vtxh02o';
+
+    const props = {
+      first_name: document.querySelector('input[name="first_name"]').value,
+      last_name: document.querySelector('input[name="last_name"]').value,
+      mobile_number: document.querySelector('input[name="mobile_number"]').value,
+      email: document.querySelector('input[name="email"]').value
+    };
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'Send Email';
+        alert('Sent!');
+      }, (err) => {
+        btn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });
+
+
+</script>
+
+
